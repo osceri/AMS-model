@@ -2,7 +2,7 @@
 ## Makefile generated for component 'rtwshared'. 
 ## 
 ## Makefile     : rtwshared.mk
-## Generated on : Mon Mar 14 17:16:45 2022
+## Generated on : Mon Mar 14 20:45:45 2022
 ## Final product: ./rtwshared.lib
 ## Product type : static library
 ## 
@@ -183,7 +183,7 @@ DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM)
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/slprj/ert/_sharedutils/UTMeanCovSqrt_14Tzk8eT.c $(START_DIR)/slprj/ert/_sharedutils/UTMeanCovSqrt_nmwxOcMg.c $(START_DIR)/slprj/ert/_sharedutils/cholUpdateFactor_4NN2zUmz.c $(START_DIR)/slprj/ert/_sharedutils/const_params.c $(START_DIR)/slprj/ert/_sharedutils/look1_binlxpw.c $(START_DIR)/slprj/ert/_sharedutils/qr_4aCbWkNT.c $(START_DIR)/slprj/ert/_sharedutils/qr_KQupoFeg.c $(START_DIR)/slprj/ert/_sharedutils/rotate_YgpoDwi7.c $(START_DIR)/slprj/ert/_sharedutils/rt_backsubrr_dbl.c $(START_DIR)/slprj/ert/_sharedutils/rt_forwardsubrr_dbl.c $(START_DIR)/slprj/ert/_sharedutils/rt_hypotd.c $(START_DIR)/slprj/ert/_sharedutils/rt_lu_real.c $(START_DIR)/slprj/ert/_sharedutils/rt_matrixlib_dbl.c $(START_DIR)/slprj/ert/_sharedutils/svd_ITQaouod.c $(START_DIR)/slprj/ert/_sharedutils/trisolve_3WRXGFtF.c $(START_DIR)/slprj/ert/_sharedutils/xaxpy_awGftAW7.c $(START_DIR)/slprj/ert/_sharedutils/xdotc_9HS6GBPS.c $(START_DIR)/slprj/ert/_sharedutils/xgemv_XwGam4Tu.c $(START_DIR)/slprj/ert/_sharedutils/xgemv_Zzn7jOKN.c $(START_DIR)/slprj/ert/_sharedutils/xgerc_VszxCftQ.c $(START_DIR)/slprj/ert/_sharedutils/xgerc_ndvvueXd.c $(START_DIR)/slprj/ert/_sharedutils/xnrm2_23q6hs5C.c $(START_DIR)/slprj/ert/_sharedutils/xnrm2_CJ11MXKb.c $(START_DIR)/slprj/ert/_sharedutils/xnrm2_hoYimUM0.c $(START_DIR)/slprj/ert/_sharedutils/xnrm2_nysWLBvB.c $(START_DIR)/slprj/ert/_sharedutils/xrot_Oh5iEeBQ.c $(START_DIR)/slprj/ert/_sharedutils/xrotg_3bzOSYJ0.c $(START_DIR)/slprj/ert/_sharedutils/xscal_rjqkBhIF.c $(START_DIR)/slprj/ert/_sharedutils/xscal_xOI1UZZc.c $(START_DIR)/slprj/ert/_sharedutils/xswap_m0ShlcLK.c
+SRCS = $(START_DIR)/slprj/ert/_sharedutils/UTMeanCovSqrt_14Tzk8eT.c $(START_DIR)/slprj/ert/_sharedutils/UTMeanCovSqrt_nmwxOcMg.c $(START_DIR)/slprj/ert/_sharedutils/cholUpdateFactor_4NN2zUmz.c $(START_DIR)/slprj/ert/_sharedutils/const_params.c $(START_DIR)/slprj/ert/_sharedutils/look1_binlxpw.c $(START_DIR)/slprj/ert/_sharedutils/qr_4aCbWkNT.c $(START_DIR)/slprj/ert/_sharedutils/qr_KQupoFeg.c $(START_DIR)/slprj/ert/_sharedutils/rotate_YgpoDwi7.c $(START_DIR)/slprj/ert/_sharedutils/rt_hypotd.c $(START_DIR)/slprj/ert/_sharedutils/svd_ITQaouod.c $(START_DIR)/slprj/ert/_sharedutils/trisolve_3WRXGFtF.c $(START_DIR)/slprj/ert/_sharedutils/xaxpy_awGftAW7.c $(START_DIR)/slprj/ert/_sharedutils/xdotc_9HS6GBPS.c $(START_DIR)/slprj/ert/_sharedutils/xgemv_XwGam4Tu.c $(START_DIR)/slprj/ert/_sharedutils/xgemv_Zzn7jOKN.c $(START_DIR)/slprj/ert/_sharedutils/xgerc_VszxCftQ.c $(START_DIR)/slprj/ert/_sharedutils/xgerc_ndvvueXd.c $(START_DIR)/slprj/ert/_sharedutils/xnrm2_23q6hs5C.c $(START_DIR)/slprj/ert/_sharedutils/xnrm2_CJ11MXKb.c $(START_DIR)/slprj/ert/_sharedutils/xnrm2_hoYimUM0.c $(START_DIR)/slprj/ert/_sharedutils/xnrm2_nysWLBvB.c $(START_DIR)/slprj/ert/_sharedutils/xrot_Oh5iEeBQ.c $(START_DIR)/slprj/ert/_sharedutils/xrotg_3bzOSYJ0.c $(START_DIR)/slprj/ert/_sharedutils/xscal_rjqkBhIF.c $(START_DIR)/slprj/ert/_sharedutils/xscal_xOI1UZZc.c $(START_DIR)/slprj/ert/_sharedutils/xswap_m0ShlcLK.c
 
 ALL_SRCS = $(SRCS)
 
@@ -191,7 +191,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = UTMeanCovSqrt_14Tzk8eT.obj UTMeanCovSqrt_nmwxOcMg.obj cholUpdateFactor_4NN2zUmz.obj const_params.obj look1_binlxpw.obj qr_4aCbWkNT.obj qr_KQupoFeg.obj rotate_YgpoDwi7.obj rt_backsubrr_dbl.obj rt_forwardsubrr_dbl.obj rt_hypotd.obj rt_lu_real.obj rt_matrixlib_dbl.obj svd_ITQaouod.obj trisolve_3WRXGFtF.obj xaxpy_awGftAW7.obj xdotc_9HS6GBPS.obj xgemv_XwGam4Tu.obj xgemv_Zzn7jOKN.obj xgerc_VszxCftQ.obj xgerc_ndvvueXd.obj xnrm2_23q6hs5C.obj xnrm2_CJ11MXKb.obj xnrm2_hoYimUM0.obj xnrm2_nysWLBvB.obj xrot_Oh5iEeBQ.obj xrotg_3bzOSYJ0.obj xscal_rjqkBhIF.obj xscal_xOI1UZZc.obj xswap_m0ShlcLK.obj
+OBJS = UTMeanCovSqrt_14Tzk8eT.obj UTMeanCovSqrt_nmwxOcMg.obj cholUpdateFactor_4NN2zUmz.obj const_params.obj look1_binlxpw.obj qr_4aCbWkNT.obj qr_KQupoFeg.obj rotate_YgpoDwi7.obj rt_hypotd.obj svd_ITQaouod.obj trisolve_3WRXGFtF.obj xaxpy_awGftAW7.obj xdotc_9HS6GBPS.obj xgemv_XwGam4Tu.obj xgemv_Zzn7jOKN.obj xgerc_VszxCftQ.obj xgerc_ndvvueXd.obj xnrm2_23q6hs5C.obj xnrm2_CJ11MXKb.obj xnrm2_hoYimUM0.obj xnrm2_nysWLBvB.obj xrot_Oh5iEeBQ.obj xrotg_3bzOSYJ0.obj xscal_rjqkBhIF.obj xscal_xOI1UZZc.obj xswap_m0ShlcLK.obj
 
 ALL_OBJS = $(OBJS)
 
@@ -358,23 +358,7 @@ rotate_YgpoDwi7.obj : $(START_DIR)/slprj/ert/_sharedutils/rotate_YgpoDwi7.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-rt_backsubrr_dbl.obj : $(START_DIR)/slprj/ert/_sharedutils/rt_backsubrr_dbl.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rt_forwardsubrr_dbl.obj : $(START_DIR)/slprj/ert/_sharedutils/rt_forwardsubrr_dbl.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
 rt_hypotd.obj : $(START_DIR)/slprj/ert/_sharedutils/rt_hypotd.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rt_lu_real.obj : $(START_DIR)/slprj/ert/_sharedutils/rt_lu_real.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rt_matrixlib_dbl.obj : $(START_DIR)/slprj/ert/_sharedutils/rt_matrixlib_dbl.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

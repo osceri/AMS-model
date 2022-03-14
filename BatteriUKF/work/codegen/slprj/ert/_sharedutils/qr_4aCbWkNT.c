@@ -5,11 +5,11 @@
  *
  * File: qr_4aCbWkNT.c
  *
- * Code generated for Simulink model 'Main'.
+ * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.71
+ * Model version                  : 1.74
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
+ * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
  */
 
 #include "rtwtypes.h"
@@ -20,7 +20,7 @@
 #include "xnrm2_CJ11MXKb.h"
 #include "qr_4aCbWkNT.h"
 
-/* Function for MATLAB Function: '<S15>/Correct' */
+/* Function for MATLAB Function: '<S5>/Correct' */
 void qr_4aCbWkNT(const real_T A[4], real_T Q[4], real_T R[4])
 {
   real_T b_A[4];

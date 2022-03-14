@@ -5,17 +5,17 @@
  *
  * File: xdotc_9HS6GBPS.c
  *
- * Code generated for Simulink model 'Main'.
+ * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.71
+ * Model version                  : 1.74
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
+ * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
  */
 
 #include "rtwtypes.h"
 #include "xdotc_9HS6GBPS.h"
 
-/* Function for MATLAB Function: '<S15>/Correct' */
+/* Function for MATLAB Function: '<S5>/Correct' */
 real_T xdotc_9HS6GBPS(const real_T x[4], const real_T y[4])
 {
   return x[0] * y[2] + x[1] * y[3];

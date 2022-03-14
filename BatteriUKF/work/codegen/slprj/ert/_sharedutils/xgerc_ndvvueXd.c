@@ -5,17 +5,17 @@
  *
  * File: xgerc_ndvvueXd.c
  *
- * Code generated for Simulink model 'Main'.
+ * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.71
+ * Model version                  : 1.74
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
+ * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
  */
 
 #include "rtwtypes.h"
 #include "xgerc_ndvvueXd.h"
 
-/* Function for MATLAB Function: '<S16>/Predict' */
+/* Function for MATLAB Function: '<S6>/Predict' */
 void xgerc_ndvvueXd(int32_T m, int32_T n, real_T alpha1, int32_T ix0, const
                     real_T y[2], real_T A[8], int32_T ia0)
 {

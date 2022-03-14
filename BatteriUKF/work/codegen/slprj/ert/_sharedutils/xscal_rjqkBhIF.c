@@ -5,17 +5,17 @@
  *
  * File: xscal_rjqkBhIF.c
  *
- * Code generated for Simulink model 'Main'.
+ * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.71
+ * Model version                  : 1.74
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
+ * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
  */
 
 #include "rtwtypes.h"
 #include "xscal_rjqkBhIF.h"
 
-/* Function for MATLAB Function: '<S15>/Correct' */
+/* Function for MATLAB Function: '<S5>/Correct' */
 void xscal_rjqkBhIF(real_T a, real_T x[4], int32_T ix0)
 {
   int32_T k;

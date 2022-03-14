@@ -5,11 +5,11 @@
  *
  * File: UTMeanCovSqrt_14Tzk8eT.c
  *
- * Code generated for Simulink model 'Main'.
+ * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.71
+ * Model version                  : 1.74
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
+ * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
  */
 
 #include "rtwtypes.h"
@@ -20,7 +20,7 @@
 #include "svd_ITQaouod.h"
 #include "UTMeanCovSqrt_14Tzk8eT.h"
 
-/* Function for MATLAB Function: '<S16>/Predict' */
+/* Function for MATLAB Function: '<S6>/Predict' */
 void UTMeanCovSqrt_14Tzk8eT(const real_T meanWeights[2], const real_T
   covWeights[2], real_T OOM, real_T Y1[2], real_T Y2[8], const real_T X1[2],
   real_T X2[8], real_T Ymean[2], real_T Sy[4], real_T Pxy[4])

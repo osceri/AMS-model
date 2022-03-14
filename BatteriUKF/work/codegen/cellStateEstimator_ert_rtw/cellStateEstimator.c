@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.71
+ * Model version                  : 1.74
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 17:18:54 2022
+ * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Generic->Custom
@@ -58,8 +58,8 @@ void batteryStateFcn(const real_T rtu_x[2], real_T rty_x_next[2])
    *  SignalConversion generated from: '<S3>/u'
    *  SignalConversion generated from: '<S3>/y'
    */
-  rty_x_next[0] = rtu_x[0] - 0.2 * rtU.Measuredcurrent / rtU.Initialcapacity;
-  tmp = exp(-0.2 / look1_binlxpw(rtu_x[0], rtCP_uDLookupTable1_bp01Data,
+  rty_x_next[0] = rtu_x[0] - 0.1 * rtU.Measuredcurrent / rtU.Initialcapacity;
+  tmp = exp(-0.1 / look1_binlxpw(rtu_x[0], rtCP_uDLookupTable1_bp01Data,
              rtCP_uDLookupTable1_tableData, 32U));
   rty_x_next[1] = tmp * rtu_x[1] - (1.0 - tmp) * look1_binlxpw(rtu_x[0],
     rtCP_uDLookupTable2_bp01Data, rtCP_uDLookupTable2_tableData, 32U) *
@@ -454,11 +454,11 @@ void cellStateEstimator_initialize(void)
   rtDW.P_m[0] = 0.1;
   rtDW.P_m[1] = 0.0;
   rtDW.P_m[2] = 0.0;
-  rtDW.P_m[3] = 0.63245553203367588;
+  rtDW.P_m[3] = 0.70710678118654757;
 
   /* Start for DataStoreMemory: '<S2>/DataStoreMemory - x' */
   rtDW.x[0] = 0.7;
-  rtDW.x[1] = 3.8;
+  rtDW.x[1] = 3.9;
 }
 
 /*
