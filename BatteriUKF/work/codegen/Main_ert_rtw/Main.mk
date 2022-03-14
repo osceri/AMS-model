@@ -2,7 +2,7 @@
 ## Makefile generated for component 'Main'. 
 ## 
 ## Makefile     : Main.mk
-## Generated on : Sun Mar 13 13:17:20 2022
+## Generated on : Mon Mar 14 17:16:47 2022
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/Main.exe
 ## Product type : executable
 ## 
@@ -23,7 +23,7 @@ MAKEFILE                  = Main.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2021a
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2021a/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/oscar/MATLAB/Projects/BatteriUKF/work/codegen
+START_DIR                 = C:/Users/oscar/Documents/GitHub/AMS-model/BatteriUKF/work/codegen
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
@@ -34,6 +34,12 @@ COMPILER_COMMAND_FILE     = Main_comp.rsp
 CMD_FILE                  = Main.rsp
 C_STANDARD_OPTS           = -fwrapv
 CPP_STANDARD_OPTS         = -fwrapv
+LIBSSC_SLI_ERT_MINGW64_OBJS = 
+LIBSSC_CORE_ERT_MINGW64_OBJS = 
+LIBNE_ERT_MINGW64_OBJS    = 
+LIBMC_ERT_MINGW64_OBJS    = 
+LIBEX_ERT_MINGW64_OBJS    = 
+LIBPM_ERT_MINGW64_OBJS    = 
 
 ###########################################################################
 ## TOOLCHAIN SPECIFICATIONS
@@ -172,7 +178,7 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
+DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=0 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
 DEFINES_OPTS = -DTID01EQ=0
 DEFINES_STANDARD = -DMODEL=Main -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
@@ -183,7 +189,7 @@ DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_STAN
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/Main_ert_rtw/Main.c
+SRCS = $(START_DIR)/Main_ert_rtw/pm_printf.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_obs_il.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_obs_all.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_obs_act.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_obs_exp.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_log.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_dxf.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_f.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_assert.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1.c $(START_DIR)/Main_ert_rtw/Main_45a0674_1_gateway.c $(START_DIR)/Main_ert_rtw/Main.c
 
 MAIN_SRC = $(START_DIR)/Main_ert_rtw/ert_main.c
 
@@ -193,7 +199,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = Main.obj
+OBJS = pm_printf.obj Main_45a0674_1_ds.obj Main_45a0674_1_ds_obs_il.obj Main_45a0674_1_ds_obs_all.obj Main_45a0674_1_ds_obs_act.obj Main_45a0674_1_ds_obs_exp.obj Main_45a0674_1_ds_log.obj Main_45a0674_1_ds_dxf.obj Main_45a0674_1_ds_f.obj Main_45a0674_1_ds_assert.obj Main_45a0674_1.obj Main_45a0674_1_gateway.obj Main.obj
 
 MAIN_OBJ = ert_main.obj
 
@@ -209,7 +215,7 @@ PREBUILT_OBJS =
 ## LIBRARIES
 ###########################################################################
 
-LIBS = $(START_DIR)/slprj/ert/_sharedutils/rtwshared.lib
+LIBS = $(MATLAB_ROOT)/toolbox/physmod/simscape/engine/sli/lib/win64/ssc_sli_ert_mingw64.lib $(MATLAB_ROOT)/toolbox/physmod/simscape/engine/core/lib/win64/ssc_core_ert_mingw64.lib $(MATLAB_ROOT)/toolbox/physmod/network_engine/lib/win64/ne_ert_mingw64.lib $(MATLAB_ROOT)/toolbox/physmod/common/math/core/lib/win64/mc_ert_mingw64.lib $(MATLAB_ROOT)/toolbox/physmod/common/external/library/lib/win64/ex_ert_mingw64.lib $(MATLAB_ROOT)/toolbox/physmod/common/foundation/core/lib/win64/pm_ert_mingw64.lib $(START_DIR)/slprj/ert/_sharedutils/rtwshared.lib
 
 ###########################################################################
 ## SYSTEM LIBRARIES
@@ -329,6 +335,70 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/simscape/engine/sli/c/win64/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/simscape/engine/sli/c/win64/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/simscape/engine/core/c/win64/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/simscape/engine/core/c/win64/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/simscape/compiler/core/c/win64/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/simscape/compiler/core/c/win64/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/network_engine/c/win64/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/network_engine/c/win64/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/common/math/core/c/win64/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/common/math/core/c/win64/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/common/lang/core/c/win64/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/common/lang/core/c/win64/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/common/external/library/c/win64/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/common/external/library/c/win64/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/common/foundation/core/c/win64/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/physmod/common/foundation/core/c/win64/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
 %.obj : $(START_DIR)/%.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
@@ -361,12 +431,94 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
+pm_printf.obj : $(START_DIR)/Main_ert_rtw/pm_printf.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds_obs_il.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_obs_il.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds_obs_all.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_obs_all.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds_obs_act.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_obs_act.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds_obs_exp.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_obs_exp.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds_log.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_log.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds_dxf.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_dxf.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds_f.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_f.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_ds_assert.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_ds_assert.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+Main_45a0674_1_gateway.obj : $(START_DIR)/Main_ert_rtw/Main_45a0674_1_gateway.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
 Main.obj : $(START_DIR)/Main_ert_rtw/Main.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
 ert_main.obj : $(START_DIR)/Main_ert_rtw/ert_main.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+#------------------------
+# BUILDABLE LIBRARIES
+#------------------------
+
+$(MATLAB_ROOT)/toolbox/physmod/simscape/engine/sli/lib/win64/ssc_sli_ert_mingw64.lib : $(LIBSSC_SLI_ERT_MINGW64_OBJS)
+	@echo "### Creating static library $@ ..."
+	$(AR) $(ARFLAGS)  $@ $(LIBSSC_SLI_ERT_MINGW64_OBJS)
+
+
+$(MATLAB_ROOT)/toolbox/physmod/simscape/engine/core/lib/win64/ssc_core_ert_mingw64.lib : $(LIBSSC_CORE_ERT_MINGW64_OBJS)
+	@echo "### Creating static library $@ ..."
+	$(AR) $(ARFLAGS)  $@ $(LIBSSC_CORE_ERT_MINGW64_OBJS)
+
+
+$(MATLAB_ROOT)/toolbox/physmod/network_engine/lib/win64/ne_ert_mingw64.lib : $(LIBNE_ERT_MINGW64_OBJS)
+	@echo "### Creating static library $@ ..."
+	$(AR) $(ARFLAGS)  $@ $(LIBNE_ERT_MINGW64_OBJS)
+
+
+$(MATLAB_ROOT)/toolbox/physmod/common/math/core/lib/win64/mc_ert_mingw64.lib : $(LIBMC_ERT_MINGW64_OBJS)
+	@echo "### Creating static library $@ ..."
+	$(AR) $(ARFLAGS)  $@ $(LIBMC_ERT_MINGW64_OBJS)
+
+
+$(MATLAB_ROOT)/toolbox/physmod/common/external/library/lib/win64/ex_ert_mingw64.lib : $(LIBEX_ERT_MINGW64_OBJS)
+	@echo "### Creating static library $@ ..."
+	$(AR) $(ARFLAGS)  $@ $(LIBEX_ERT_MINGW64_OBJS)
+
+
+$(MATLAB_ROOT)/toolbox/physmod/common/foundation/core/lib/win64/pm_ert_mingw64.lib : $(LIBPM_ERT_MINGW64_OBJS)
+	@echo "### Creating static library $@ ..."
+	$(AR) $(ARFLAGS)  $@ $(LIBPM_ERT_MINGW64_OBJS)
 
 
 ###########################################################################

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.52
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 13:17:04 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #ifndef RTW_HEADER_xscal_rjqkBhIF_h_

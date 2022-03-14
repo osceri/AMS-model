@@ -7,16 +7,16 @@
  *
  * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.52
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 13:17:04 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
 #include <math.h>
 #include "xnrm2_nysWLBvB.h"
 
-/* Function for MATLAB Function: '<S5>/Predict' */
+/* Function for MATLAB Function: '<S16>/Predict' */
 real_T xnrm2_nysWLBvB(int32_T n, const real_T x[8], int32_T ix0)
 {
   real_T absxk;

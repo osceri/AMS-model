@@ -1,2 +1,14 @@
 Main.obj
+Main_45a0674_1.obj
+Main_45a0674_1_ds.obj
+Main_45a0674_1_ds_assert.obj
+Main_45a0674_1_ds_dxf.obj
+Main_45a0674_1_ds_f.obj
+Main_45a0674_1_ds_log.obj
+Main_45a0674_1_ds_obs_act.obj
+Main_45a0674_1_ds_obs_all.obj
+Main_45a0674_1_ds_obs_exp.obj
+Main_45a0674_1_ds_obs_il.obj
+Main_45a0674_1_gateway.obj
 ert_main.obj
+pm_printf.obj

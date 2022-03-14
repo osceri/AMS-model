@@ -7,12 +7,12 @@
  *
  * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.52
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 13:17:04 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  *
  * Target selection: ert.tlc
- * Embedded hardware selection: ARM Compatible->ARM Cortex-M
+ * Embedded hardware selection: Generic->Custom
  * Code generation objectives: Unspecified
  * Validation result: Not run
  */
@@ -23,7 +23,7 @@
 /* Model Code Variants */
 
 /* Forward declaration for rtModel */
-typedef struct tag_RTM_Main_T RT_MODEL_Main_T;
+typedef struct tag_RTM RT_MODEL;
 
 #endif                                 /* RTW_HEADER_Main_types_h_ */
 

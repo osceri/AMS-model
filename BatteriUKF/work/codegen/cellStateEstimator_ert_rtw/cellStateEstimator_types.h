@@ -7,12 +7,12 @@
  *
  * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.61
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 19:14:07 2022
+ * C/C++ source code generated on : Mon Mar 14 17:18:54 2022
  *
  * Target selection: ert.tlc
- * Embedded hardware selection: ARM Compatible->ARM Cortex-M
+ * Embedded hardware selection: Generic->Custom
  * Code generation objectives: Unspecified
  * Validation result: Not run
  */
@@ -21,10 +21,6 @@
 #define RTW_HEADER_cellStateEstimator_types_h_
 
 /* Model Code Variants */
-
-/* Forward declaration for rtModel */
-typedef struct tag_RTM_cellStateEstimator_T RT_MODEL_cellStateEstimator_T;
-
 #endif                              /* RTW_HEADER_cellStateEstimator_types_h_ */
 
 /*

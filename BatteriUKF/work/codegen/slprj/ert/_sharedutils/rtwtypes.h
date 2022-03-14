@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.52
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 13:17:04 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #ifndef RTWTYPES_H
@@ -28,12 +28,12 @@
 
 /*=======================================================================*
  * Target hardware information
- *   Device type: ARM Compatible->ARM Cortex-M
+ *   Device type: Generic->Custom
  *   Number of bits:     char:   8    short:   16    int:  32
  *                       long:  32
  *                       native word size:  32
  *   Byte ordering: LittleEndian
- *   Signed integer division rounds to: Zero
+ *   Signed integer division rounds to: Floor
  *   Shift right on a signed integer as arithmetic shift: on
  *=======================================================================*/
 
@@ -65,68 +65,6 @@ typedef unsigned long ulong_T;
 typedef char char_T;
 typedef unsigned char uchar_T;
 typedef char_T byte_T;
-
-/*===========================================================================*
- * Complex number type definitions                                           *
- *===========================================================================*/
-#define CREAL_T
-
-typedef struct {
-  real32_T re;
-  real32_T im;
-} creal32_T;
-
-typedef struct {
-  real64_T re;
-  real64_T im;
-} creal64_T;
-
-typedef struct {
-  real_T re;
-  real_T im;
-} creal_T;
-
-#define CINT8_T
-
-typedef struct {
-  int8_T re;
-  int8_T im;
-} cint8_T;
-
-#define CUINT8_T
-
-typedef struct {
-  uint8_T re;
-  uint8_T im;
-} cuint8_T;
-
-#define CINT16_T
-
-typedef struct {
-  int16_T re;
-  int16_T im;
-} cint16_T;
-
-#define CUINT16_T
-
-typedef struct {
-  uint16_T re;
-  uint16_T im;
-} cuint16_T;
-
-#define CINT32_T
-
-typedef struct {
-  int32_T re;
-  int32_T im;
-} cint32_T;
-
-#define CUINT32_T
-
-typedef struct {
-  uint32_T re;
-  uint32_T im;
-} cuint32_T;
 
 /*=======================================================================*
  * Min and Max:                                                          *

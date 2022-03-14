@@ -1,3 +1,4 @@
+@echo off
 
 call "setup_mingw.bat"
 

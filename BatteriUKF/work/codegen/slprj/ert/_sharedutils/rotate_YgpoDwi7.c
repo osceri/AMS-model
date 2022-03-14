@@ -7,17 +7,17 @@
  *
  * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.52
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 13:17:04 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
 #include <math.h>
-#include "rt_hypotd_snf.h"
+#include "rt_hypotd.h"
 #include "rotate_YgpoDwi7.h"
 
-/* Function for MATLAB Function: '<S4>/Correct' */
+/* Function for MATLAB Function: '<S15>/Correct' */
 void rotate_YgpoDwi7(real_T x, real_T y, real_T *c, real_T *s, real_T *r)
 {
   real_T absx;
@@ -40,7 +40,7 @@ void rotate_YgpoDwi7(real_T x, real_T y, real_T *c, real_T *s, real_T *r)
     xx = x / t;
     yy = y / t;
     absx = fabs(xx);
-    rho = rt_hypotd_snf(absx, fabs(yy));
+    rho = rt_hypotd(absx, fabs(yy));
     *c = absx / rho;
     xx /= absx;
     *s = xx * yy / rho;

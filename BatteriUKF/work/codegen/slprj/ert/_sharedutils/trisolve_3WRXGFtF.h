@@ -7,16 +7,16 @@
  *
  * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.52
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 13:17:04 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #ifndef RTW_HEADER_trisolve_3WRXGFtF_h_
 #define RTW_HEADER_trisolve_3WRXGFtF_h_
 #include "rtwtypes.h"
 
-extern void trisolve_3WRXGFtF(real_T A, real_T B[2]);
+extern void trisolve_3WRXGFtF(real_T A, real_T B_0[2]);
 
 #endif                                 /* RTW_HEADER_trisolve_3WRXGFtF_h_ */
 

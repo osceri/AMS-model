@@ -7,20 +7,20 @@
  *
  * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.52
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 13:17:04 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
 #include <math.h>
-#include "rt_hypotd_snf.h"
+#include "rt_hypotd.h"
 #include "xgemv_XwGam4Tu.h"
 #include "xgerc_VszxCftQ.h"
 #include "xnrm2_CJ11MXKb.h"
 #include "qr_4aCbWkNT.h"
 
-/* Function for MATLAB Function: '<S4>/Correct' */
+/* Function for MATLAB Function: '<S15>/Correct' */
 void qr_4aCbWkNT(const real_T A[4], real_T Q[4], real_T R[4])
 {
   real_T b_A[4];
@@ -42,7 +42,7 @@ void qr_4aCbWkNT(const real_T A[4], real_T Q[4], real_T R[4])
   b = 0.0;
   beta1 = xnrm2_CJ11MXKb(1, b_A, 2);
   if (beta1 != 0.0) {
-    beta1 = rt_hypotd_snf(A[0], beta1);
+    beta1 = rt_hypotd(A[0], beta1);
     if (A[0] >= 0.0) {
       beta1 = -beta1;
     }
@@ -57,9 +57,9 @@ void qr_4aCbWkNT(const real_T A[4], real_T Q[4], real_T R[4])
 
         beta1 *= 9.9792015476736E+291;
         atmp *= 9.9792015476736E+291;
-      } while (!(fabs(beta1) >= 1.0020841800044864E-292));
+      } while (fabs(beta1) < 1.0020841800044864E-292);
 
-      beta1 = rt_hypotd_snf(atmp, xnrm2_CJ11MXKb(1, b_A, 2));
+      beta1 = rt_hypotd(atmp, xnrm2_CJ11MXKb(1, b_A, 2));
       if (atmp >= 0.0) {
         beta1 = -beta1;
       }

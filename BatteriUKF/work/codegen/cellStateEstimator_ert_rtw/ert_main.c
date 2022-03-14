@@ -7,12 +7,12 @@
  *
  * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.61
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 19:14:07 2022
+ * C/C++ source code generated on : Mon Mar 14 17:18:54 2022
  *
  * Target selection: ert.tlc
- * Embedded hardware selection: ARM Compatible->ARM Cortex-M
+ * Embedded hardware selection: Generic->Custom
  * Code generation objectives: Unspecified
  * Validation result: Not run
  */
@@ -42,7 +42,6 @@ void rt_OneStep(void)
 
   /* Check for overrun */
   if (OverrunFlag) {
-    rtmSetErrorStatus(cellStateEstimator_M, "Overrun");
     return;
   }
 
@@ -90,14 +89,18 @@ int_T main(int_T argc, const char *argv[])
          "Generated ERT main won't simulate model step behavior. "
          "To change this behavior select the 'MAT-file logging' option.\n");
   fflush((NULL));
-  while (rtmGetErrorStatus(cellStateEstimator_M) == (NULL)) {
+  while (1) {
     /*  Perform other application tasks here */
   }
 
-  /* Disable rt_OneStep() here */
+  /* The option 'Remove error status field in real-time model data structure'
+   * is selected, therefore the following code does not need to execute.
+   */
+#if 0
 
-  /* Terminate model */
-  cellStateEstimator_terminate();
+  /* Disable rt_OneStep() here */
+#endif
+
   return 0;
 }
 

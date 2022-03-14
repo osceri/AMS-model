@@ -7,12 +7,12 @@
  *
  * Code generated for Simulink model 'cellStateEstimator'.
  *
- * Model version                  : 1.61
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 19:14:07 2022
+ * C/C++ source code generated on : Mon Mar 14 17:18:54 2022
  *
  * Target selection: ert.tlc
- * Embedded hardware selection: ARM Compatible->ARM Cortex-M
+ * Embedded hardware selection: Generic->Custom
  * Code generation objectives: Unspecified
  * Validation result: Not run
  */
@@ -26,74 +26,41 @@
 #endif                                 /* cellStateEstimator_COMMON_INCLUDES_ */
 
 #include "cellStateEstimator_types.h"
-#include "rt_nonfinite.h"
 
 /* Macros for accessing real-time model data structure */
-#ifndef rtmGetErrorStatus
-#define rtmGetErrorStatus(rtm)         ((rtm)->errorStatus)
-#endif
-
-#ifndef rtmSetErrorStatus
-#define rtmSetErrorStatus(rtm, val)    ((rtm)->errorStatus = (val))
-#endif
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  real_T P[4];                         /* '<S2>/DataStoreMemory - P' */
+  real_T P_m[4];                       /* '<S2>/DataStoreMemory - P' */
   real_T x[2];                         /* '<S2>/DataStoreMemory - x' */
-} DW_cellStateEstimator_T;
+} DW;
 
 /* External inputs (root inport signals with default storage) */
 typedef struct {
   real_T MeasuredOCV;                  /* '<Root>/Voltage' */
   real_T Measuredcurrent;              /* '<Root>/Current' */
   real_T Measuredtemperature;          /* '<Root>/Temperature' */
-  real_T CurrentCounting;              /* '<Root>/Current Counting' */
   real_T Initialcapacity;              /* '<Root>/Initial Capacity' */
-} ExtU_cellStateEstimator_T;
+} ExtU;
 
 /* External outputs (root outports fed by signals with default storage) */
 typedef struct {
   real_T SOC;                          /* '<Root>/SOC' */
   real_T Capacity;                     /* '<Root>/Capacity' */
-} ExtY_cellStateEstimator_T;
-
-/* Real-time Model Data Structure */
-struct tag_RTM_cellStateEstimator_T {
-  const char_T * volatile errorStatus;
-};
+} ExtY;
 
 /* Block states (default storage) */
-extern DW_cellStateEstimator_T cellStateEstimator_DW;
+extern DW rtDW;
 
 /* External inputs (root inport signals with default storage) */
-extern ExtU_cellStateEstimator_T cellStateEstimator_U;
+extern ExtU rtU;
 
 /* External outputs (root outports fed by signals with default storage) */
-extern ExtY_cellStateEstimator_T cellStateEstimator_Y;
+extern ExtY rtY;
 
 /* Model entry point functions */
 extern void cellStateEstimator_initialize(void);
 extern void cellStateEstimator_step(void);
-extern void cellStateEstimator_terminate(void);
-
-/* Real-time Model object */
-extern RT_MODEL_cellStateEstimator_T *const cellStateEstimator_M;
-
-/*-
- * These blocks were eliminated from the model due to optimizations:
- *
- * Block '<S5>/RegisterSimulinkFcn' : Unused code path elimination
- * Block '<S6>/RegisterSimulinkFcn' : Unused code path elimination
- * Block '<S2>/checkMeasurementFcn1Signals' : Unused code path elimination
- * Block '<S2>/checkStateTransitionFcnSignals' : Unused code path elimination
- * Block '<S2>/DataTypeConversion_Enable1' : Eliminate redundant data type conversion
- * Block '<S2>/DataTypeConversion_Q' : Eliminate redundant data type conversion
- * Block '<S2>/DataTypeConversion_R1' : Eliminate redundant data type conversion
- * Block '<S2>/DataTypeConversion_uMeas1' : Eliminate redundant data type conversion
- * Block '<S2>/DataTypeConversion_uState' : Eliminate redundant data type conversion
- * Block '<S2>/DataTypeConversion_y1' : Eliminate redundant data type conversion
- */
 
 /*-
  * The generated code includes comments that allow you to trace directly
@@ -123,12 +90,7 @@ extern RT_MODEL_cellStateEstimator_T *const cellStateEstimator_M;
  * '<S8>'   : 'Main/cellStateEstimator/Unscented Kalman Filter/Correct1/Correct'
  * '<S9>'   : 'Main/cellStateEstimator/Unscented Kalman Filter/Predict/Predict'
  * '<S10>'  : 'Main/cellStateEstimator/Unscented Kalman Filter/Subsystem/MATLAB Function'
- * '<S11>'  : 'Main/cellStateEstimator/f/Cp'
- * '<S12>'  : 'Main/cellStateEstimator/f/Rp'
- * '<S13>'  : 'Main/cellStateEstimator/f/Rs'
- * '<S14>'  : 'Main/cellStateEstimator/f/h'
- * '<S15>'  : 'Main/cellStateEstimator/h/Rs'
- * '<S16>'  : 'Main/cellStateEstimator/h/ocv'
+ * '<S11>'  : 'Main/cellStateEstimator/f/h'
  */
 #endif                                 /* RTW_HEADER_cellStateEstimator_h_ */
 

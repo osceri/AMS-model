@@ -7,16 +7,16 @@
  *
  * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.52
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Sun Mar 13 13:17:04 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
 #include <math.h>
 #include "xnrm2_23q6hs5C.h"
 
-/* Function for MATLAB Function: '<S4>/Correct' */
+/* Function for MATLAB Function: '<S15>/Correct' */
 real_T xnrm2_23q6hs5C(const real_T x[4])
 {
   real_T absxk;
