@@ -5,18 +5,18 @@
  *
  * File: xnrm2_hoYimUM0.c
  *
- * Code generated for Simulink model 'cellStateEstimator'.
+ * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.74
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
 #include <math.h>
 #include "xnrm2_hoYimUM0.h"
 
-/* Function for MATLAB Function: '<S5>/Correct' */
+/* Function for MATLAB Function: '<S15>/Correct' */
 real_T xnrm2_hoYimUM0(int32_T n, const real_T x[2], int32_T ix0)
 {
   real_T absxk;

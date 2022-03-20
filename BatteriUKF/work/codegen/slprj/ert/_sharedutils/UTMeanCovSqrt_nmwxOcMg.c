@@ -5,11 +5,11 @@
  *
  * File: UTMeanCovSqrt_nmwxOcMg.c
  *
- * Code generated for Simulink model 'cellStateEstimator'.
+ * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.74
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
@@ -20,7 +20,7 @@
 #include "xnrm2_CJ11MXKb.h"
 #include "UTMeanCovSqrt_nmwxOcMg.h"
 
-/* Function for MATLAB Function: '<S5>/Correct' */
+/* Function for MATLAB Function: '<S15>/Correct' */
 void UTMeanCovSqrt_nmwxOcMg(const real_T meanWeights[2], const real_T
   covWeights[2], real_T OOM, real_T Y1, const real_T Y2[4], const real_T X1[2],
   real_T X2[8], real_T *Ymean, real_T *Sy, real_T Pxy[2])

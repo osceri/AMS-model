@@ -5,11 +5,11 @@
  *
  * File: xgemv_XwGam4Tu.h
  *
- * Code generated for Simulink model 'cellStateEstimator'.
+ * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.74
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #ifndef RTW_HEADER_xgemv_XwGam4Tu_h_

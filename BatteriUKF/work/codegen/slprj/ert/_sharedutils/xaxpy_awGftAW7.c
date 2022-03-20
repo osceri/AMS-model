@@ -5,17 +5,17 @@
  *
  * File: xaxpy_awGftAW7.c
  *
- * Code generated for Simulink model 'cellStateEstimator'.
+ * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.74
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
 #include "xaxpy_awGftAW7.h"
 
-/* Function for MATLAB Function: '<S5>/Correct' */
+/* Function for MATLAB Function: '<S15>/Correct' */
 void xaxpy_awGftAW7(real_T a, real_T y[4])
 {
   if (a != 0.0) {

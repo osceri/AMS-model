@@ -5,17 +5,17 @@
  *
  * File: xgemv_XwGam4Tu.c
  *
- * Code generated for Simulink model 'cellStateEstimator'.
+ * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.74
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
 #include "xgemv_XwGam4Tu.h"
 
-/* Function for MATLAB Function: '<S5>/Correct' */
+/* Function for MATLAB Function: '<S15>/Correct' */
 void xgemv_XwGam4Tu(int32_T m, int32_T n, const real_T A[4], int32_T ia0, const
                     real_T x[4], int32_T ix0, real_T y[2])
 {

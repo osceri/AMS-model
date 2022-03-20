@@ -5,11 +5,11 @@
  *
  * File: cholUpdateFactor_4NN2zUmz.c
  *
- * Code generated for Simulink model 'cellStateEstimator'.
+ * Code generated for Simulink model 'Main'.
  *
- * Model version                  : 1.74
+ * Model version                  : 1.71
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon Mar 14 20:45:31 2022
+ * C/C++ source code generated on : Mon Mar 14 17:16:16 2022
  */
 
 #include "rtwtypes.h"
@@ -17,7 +17,7 @@
 #include "rotate_YgpoDwi7.h"
 #include "cholUpdateFactor_4NN2zUmz.h"
 
-/* Function for MATLAB Function: '<S5>/Correct' */
+/* Function for MATLAB Function: '<S15>/Correct' */
 void cholUpdateFactor_4NN2zUmz(real_T *S, real_T U)
 {
   real_T R;
