@@ -4,8 +4,7 @@ import glob
 import shutil
 
 cwd = os.getcwd()
-path_shared_util = cwd + r"\BatteriUKF\work\codegen\slprj\ert\_sharedutils"
-path_cse = cwd + r"\BatteriUKF\work\codegen\cellStateEstimator_ert_rtw"
+path_cse = cwd + r"\BatteriUKF\work\codegen\AEKF_ert_rtw"
 
 path_dst_c = cwd + r"\CSEC"
 path_dst_h = cwd + r"\CSEH"
@@ -18,7 +17,7 @@ except:
 os.mkdir(path_dst_c)
 os.mkdir(path_dst_h)
 
-for path_src in [ path_shared_util, path_cse ]:
+for path_src in [ path_cse ]:
     os.chdir(path_src)
     for cfile in glob.glob("*.c"):
         src = f"{path_src}\\{cfile}"
