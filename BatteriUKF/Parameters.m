@@ -1,12 +1,17 @@
 clear, clc
-load soc.mat
-load ocv.mat
-load docv.mat
-load Rs.mat
-load Rp.mat
-load tau.mat
-load coeffs.mat
-load AF_state.mat
+
+%% LUTs
+g = [-5.90241040764213,13.2176608408928,-6.67518652537707,-2.97531430827542,3.52891506032032,2.99808472821531];
+soc_LUT = [0,0.0909090909090909,0.181818181818182,0.272727272727273,0.363636363636364,0.454545454545455,0.545454545454545,0.636363636363636,0.727272727272727,0.818181818181818,0.909090909090909,1];
+Rs_LUT = [0.00446224960061823,0.00395928973129493,0.00365723545490869,0.00346135878439388,0.00332839611795259,0.00323577769308545,0.00317057626115591,0.00312485453442757,0.00309346940400882,0.00307294184679812,0.00306083426030356,0.00305538791678206];
+Rp_LUT = [0.00132849731829051,0.00133071540686515,0.00133106364620441,0.00133282418704394,0.00133927918011939,0.00135371077616641,0.00137940112592065,0.00141963238011775,0.00147768668949337,0.00155684620478314,0.00166039307672272,0.00179160945604776];
+tau_LUT = 1000*[0.950871946837005,0.952459545918238,0.952715608141667,0.956801088701637,1.11698000087499,2.16329230815358,2.20434667293784,1.18399583949683,1.06079424954235,1.11432062847071,1.18842633649718,1.28234445639369];
+ocv_LUT = g(1)*soc_LUT.^5 + g(2)*soc_LUT.^4 + g(3)*soc_LUT.^3 + g(4)*soc_LUT.^2 + g(5)*soc_LUT.^1 + g(6);
+
+%% Simulation stats
+
+z0 = 0.5;
+C_det = -4;
 
 %% Battery Parameters
 C    = 6.6;         % C-rating for a cell                  [A]
@@ -16,36 +21,17 @@ Ri   = 0.003355;    % Internal resistance                  [Ohm]
 AH   = Q/Vnom;      % Ampere-hour rating                   [hr*A]
 V1   = 3.8;         % Voltage V1 < Vnom when charge is AH1 [V]
 AH1  = AH/2;        % Charge AH1 when no-load volts are V1 [hr*A]
-AH0  = 0.7*AH;      % Initial charge                       [hr*A]
-SOC0 = 0.7;         % Initial State of Charge              [%]
+AH0  = z0*AH;      % Initial charge                       [hr*A]
+SOC0 = z0;         % Initial State of Charge              [%]
 
 %% Other Parameters
 Ts = 0.2;           % Fundamental sample time   [s]
 
 %% Filter parameters
-x0  = [0.0; 0.7];           % Initial State
-Px0 = diag(10^-11 * x0);    % Initial covariance
-Qx0 = diag(10^-11 * x0);    % Process noise covariance
-Rx0 = 1e-3;                 % Measurement noise covariance
-
-Lx = 100;
-
-p0  = [ mean(Rs_LUT), mean(Rp_LUT), mean(tau_LUT), AH*1.2 ];        % Initial parameters
-
-
-%% Struct creation
-s0      = struct;
-
-s0.Lx   = uint16(Lx);
-s0.lx   = uint16(0);
-s0.Ex   = zeros(s0.Lx, 1);
-s0.Px_  = Px0;
-s0.Px   = Px0;
-s0.Qx   = Qx0;
-s0.Rx   = Rx0;
-s0.x_   = x0;
-s0.x    = x0;
-s0.p    = p0;
+x0  = [0.0; AH0*0.8; AH*1.3];                   % Initial State
+Px0 = diag([1e-7, 1e-7, 1e-2]'.*x0);    % Initial covariance
+Qx0 = diag([1e-9, 1e-9, 1e-2]'.*x0);    % Process noise covariance
+Rx0 = 1e-3;    % Measurement noise covariance
 
 
 %% Export
