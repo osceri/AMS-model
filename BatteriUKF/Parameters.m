@@ -11,7 +11,12 @@ ocv_LUT = g(1)*soc_LUT.^5 + g(2)*soc_LUT.^4 + g(3)*soc_LUT.^3 + g(4)*soc_LUT.^2 
 %% Simulation stats
 
 z0 = 0.5;
-C_det = -4;
+Capacity_deterioration = -5;
+Current_measurement_SNR = 100;
+Voltage_measurement_SNR = 100;
+
+SOC_upper_bound = 0.7;
+SOC_lower_bound = 0.3;
 
 %% Battery Parameters
 C    = 6.6;         % C-rating for a cell                  [A]
@@ -28,9 +33,9 @@ SOC0 = z0;         % Initial State of Charge              [%]
 Ts = 0.2;           % Fundamental sample time   [s]
 
 %% Filter parameters
-x0  = [0.0; AH0*0.8; AH*1.3];                   % Initial State
-Px0 = diag([1e-7, 1e-7, 1e-2]'.*x0);    % Initial covariance
-Qx0 = diag([1e-9, 1e-9, 1e-2]'.*x0);    % Process noise covariance
+x0  = [0.0; AH0; AH];                   % Initial State
+Px0 = diag([1e-6, 1e-6, 1e-5]'.*x0);    % Initial covariance
+Qx0 = diag([1e-6, 1e-6, 1e-6]'.*x0);    % Process noise covariance
 Rx0 = 1e-3;    % Measurement noise covariance
 
 
