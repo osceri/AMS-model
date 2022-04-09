@@ -1,0 +1,1 @@
+var reportPages = [["Summary","CBR_survey.html"],["Subsystem Report","CBR_subsystems.html"],["Code Interface Report","CBR_interface.html"],["Traceability Report","CBR_trace.html"],["Static Code Metrics Report","CBR_metrics.html"],["Code Replacements Report","CBR_replacements.html"],["Coder Assumptions","CBR_coderassumptions.html"]];

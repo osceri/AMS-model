@@ -68,7 +68,7 @@ R_short = 33;
 
 Cap_det = -1e-6;
 
-U_sought = 4.2;
+U_sought = 4.15;
 U_CC = 0.06;
 I_CV = 1;
 U_tol = 0.0000005;
