@@ -1,7 +1,7 @@
 #include "Accumulator.h"
 #include <math.h>
-#include "rtwtypes.h"
 #include <string.h>
+#include "rtwtypes.h"
 #include "look1_binlxpw.h"
 
 DW_Accumulator_T Accumulator_DW;
@@ -12,15 +12,16 @@ RT_MODEL_Accumulator_T *const Accumulator_M = &Accumulator_M_;
 void Accumulator_step(void)
 {
   real_T rtb_Divide[126];
+  real_T rtb_Rpz[126];
   real_T rtb_Rsz[126];
   real_T rtb_Switch[126];
-  real_T rtb_Divide_a;
-  real_T rtb_Product1_g;
+  real_T rtb_Memory3;
   real_T rtb_tauz;
   int32_T i;
-  rtb_Product1_g = Accumulator_P.Ts_sim * Accumulator_U.Current;
+  rtb_Memory3 = Accumulator_DW.Memory3_PreviousInput;
   for (i = 0; i < 126; i++) {
     real_T a;
+    real_T rtb_Divide_a;
     real_T rtb_Rsz_m;
     rtb_Divide_a = Accumulator_DW.Memory_PreviousInput[i] /
       Accumulator_DW.Memory2_PreviousInput[i];
@@ -30,38 +31,51 @@ void Accumulator_step(void)
       12U);
     a = rtb_Rsz_m * rtb_tauz;
     rtb_Rsz_m = (rtb_Rsz_m + look1_binlxpw(rtb_Divide_a, Accumulator_P.soc,
-      Accumulator_P.Rp, 12U)) * Accumulator_P.Ts_sim;
+      Accumulator_P.Rp, 12U)) * Accumulator_P.Ts;
     rtb_Rsz_m = (((2.0 * a + rtb_Rsz_m) * Accumulator_U.Current + (rtb_Rsz_m -
-      2.0 * a) * Accumulator_DW.Memory3_PreviousInput) - (Accumulator_P.Ts_sim -
-      2.0 * rtb_tauz) * Accumulator_DW.Memory4_PreviousInput[i]) / (2.0 *
-      rtb_tauz + Accumulator_P.Ts_sim);
+      2.0 * a) * rtb_Memory3) - (Accumulator_P.Ts - 2.0 * rtb_tauz) *
+                 Accumulator_DW.Memory4_PreviousInput[i]) / (2.0 * rtb_tauz +
+      Accumulator_P.Ts);
     rtb_tauz = rtb_Rsz_m + look1_binlxpw(rtb_Divide_a, Accumulator_P.soc,
       Accumulator_P.ocv, 12U);
     Accumulator_Y.Voltages[i] = rtb_tauz;
     rtb_Divide[i] = rtb_Divide_a;
     rtb_Rsz[i] = rtb_Rsz_m;
-    rtb_Switch[i] = (rtb_Product1_g + Accumulator_DW.Memory_PreviousInput[i]) -
-      rtb_tauz / Accumulator_P.R_short * Accumulator_U.Balances[i];
+    rtb_Switch[i] = rtb_tauz;
   }
 
-  rtb_Product1_g = exp(Accumulator_P.Cap_det / (Accumulator_P.C_r * 3600.0) *
-                       Accumulator_DW.Memory1_PreviousInput);
-  Accumulator_DW.Memory3_PreviousInput = Accumulator_U.Current;
+  rtb_Memory3 = Accumulator_P.Ts * Accumulator_U.Current;
   for (i = 0; i < 126; i++) {
-    rtb_tauz = rtb_Switch[i];
-    rtb_Divide_a = Accumulator_DW.Memory2_PreviousInput[i] * rtb_Product1_g;
+    rtb_Switch[i] = rtb_Switch[i] / Accumulator_P.R_short
+      * Accumulator_U.Balances * Accumulator_P.Gain_Gain + (rtb_Memory3 +
+      Accumulator_DW.Memory_PreviousInput[i]);
+  }
+
+  rtb_Memory3 = exp(Accumulator_P.Cap_det / (Accumulator_P.C_r * 3600.0) *
+                    Accumulator_DW.Memory1_PreviousInput);
+  for (i = 0; i < 126; i++) {
+    rtb_Rpz[i] = Accumulator_DW.Memory2_PreviousInput[i] * rtb_Memory3;
     Accumulator_Y.SOCs[i] = rtb_Divide[i];
     Accumulator_Y.Capacities[i] = Accumulator_DW.Memory2_PreviousInput[i];
+  }
+
+  memcpy(&Accumulator_Y.Temperatures[0], &Accumulator_P.cTmp[0], 60U * sizeof
+         (real_T));
+  Accumulator_Y.DisplayCurrent = Accumulator_U.Current;
+  Accumulator_DW.Memory3_PreviousInput = Accumulator_U.Current;
+  for (i = 0; i < 126; i++) {
+    rtb_Memory3 = rtb_Rpz[i];
+    rtb_tauz = rtb_Switch[i];
     Accumulator_DW.Memory4_PreviousInput[i] = rtb_Rsz[i];
-    if (rtb_tauz > rtb_Divide_a) {
-      Accumulator_DW.Memory_PreviousInput[i] = rtb_Divide_a;
+    if (rtb_tauz > rtb_Memory3) {
+      Accumulator_DW.Memory_PreviousInput[i] = rtb_Memory3;
     } else if (rtb_tauz < Accumulator_P.Constant1_Value) {
       Accumulator_DW.Memory_PreviousInput[i] = Accumulator_P.Constant1_Value;
     } else {
       Accumulator_DW.Memory_PreviousInput[i] = rtb_tauz;
     }
 
-    Accumulator_DW.Memory2_PreviousInput[i] = rtb_Divide_a;
+    Accumulator_DW.Memory2_PreviousInput[i] = rtb_Memory3;
   }
 
   Accumulator_DW.Memory1_PreviousInput = fabs(Accumulator_U.Current +

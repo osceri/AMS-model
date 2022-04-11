@@ -2,7 +2,7 @@
 ## Makefile generated for component 'rtwshared'. 
 ## 
 ## Makefile     : rtwshared.mk
-## Generated on : Sat Apr 09 14:35:06 2022
+## Generated on : Mon Apr 11 22:46:20 2022
 ## Final product: .\rtwshared.lib
 ## Product type : static library
 ## 
@@ -183,7 +183,7 @@ DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM)
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)\slprj\ert\_sharedutils\look1_binlxpw.c $(START_DIR)\slprj\ert\_sharedutils\merge_SqkScL3b.c $(START_DIR)\slprj\ert\_sharedutils\rtGetInf.c $(START_DIR)\slprj\ert\_sharedutils\rtGetNaN.c $(START_DIR)\slprj\ert\_sharedutils\rt_nonfinite.c $(START_DIR)\slprj\ert\_sharedutils\sort_iw8mDS81.c $(START_DIR)\slprj\ert\_sharedutils\UTMeanCovSqrt_C2vgLQ4W.c $(START_DIR)\slprj\ert\_sharedutils\UTMeanCovSqrt_C6QfB9Td.c $(START_DIR)\slprj\ert\_sharedutils\cholUpdateFactor_HBMX5a5h.c $(START_DIR)\slprj\ert\_sharedutils\qr_5a2P8Gh6.c $(START_DIR)\slprj\ert\_sharedutils\qr_DvOBrgQi.c $(START_DIR)\slprj\ert\_sharedutils\rotate_LZ7ctbe0.c $(START_DIR)\slprj\ert\_sharedutils\rt_hypotd_snf.c $(START_DIR)\slprj\ert\_sharedutils\svd_u3DvUgOe.c $(START_DIR)\slprj\ert\_sharedutils\trisolve_BC1XmAGq.c $(START_DIR)\slprj\ert\_sharedutils\xaxpy_OQ28XA21.c $(START_DIR)\slprj\ert\_sharedutils\xaxpy_Wxch84Fl.c $(START_DIR)\slprj\ert\_sharedutils\xaxpy_guu0hJif.c $(START_DIR)\slprj\ert\_sharedutils\xdotc_mznw4aLl.c $(START_DIR)\slprj\ert\_sharedutils\xgemv_NQlWbt2i.c $(START_DIR)\slprj\ert\_sharedutils\xgemv_fRiR1I1O.c $(START_DIR)\slprj\ert\_sharedutils\xgerc_R09LiDgJ.c $(START_DIR)\slprj\ert\_sharedutils\xgerc_tNNiazQU.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_7bm34mDQ.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_Mnmxg9YT.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_Rlk0oxWw.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_nLdASVZH.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_xDOlDEtw.c $(START_DIR)\slprj\ert\_sharedutils\xrot_i7f01JoJ.c $(START_DIR)\slprj\ert\_sharedutils\xrotg_XzIjz1eG.c $(START_DIR)\slprj\ert\_sharedutils\xscal_59GtRAwv.c $(START_DIR)\slprj\ert\_sharedutils\xscal_PLmmUlD2.c $(START_DIR)\slprj\ert\_sharedutils\xscal_eaAxXsvQ.c $(START_DIR)\slprj\ert\_sharedutils\xswap_JoAqPjUv.c
+SRCS = $(START_DIR)\slprj\ert\_sharedutils\look1_binlxpw.c $(START_DIR)\slprj\ert\_sharedutils\UTMeanCovSqrt_C2vgLQ4W.c $(START_DIR)\slprj\ert\_sharedutils\UTMeanCovSqrt_C6QfB9Td.c $(START_DIR)\slprj\ert\_sharedutils\cholUpdateFactor_HBMX5a5h.c $(START_DIR)\slprj\ert\_sharedutils\qr_5a2P8Gh6.c $(START_DIR)\slprj\ert\_sharedutils\qr_DvOBrgQi.c $(START_DIR)\slprj\ert\_sharedutils\rotate_LZ7ctbe0.c $(START_DIR)\slprj\ert\_sharedutils\rtGetInf.c $(START_DIR)\slprj\ert\_sharedutils\rtGetNaN.c $(START_DIR)\slprj\ert\_sharedutils\rt_hypotd_snf.c $(START_DIR)\slprj\ert\_sharedutils\rt_nonfinite.c $(START_DIR)\slprj\ert\_sharedutils\svd_u3DvUgOe.c $(START_DIR)\slprj\ert\_sharedutils\trisolve_BC1XmAGq.c $(START_DIR)\slprj\ert\_sharedutils\xaxpy_OQ28XA21.c $(START_DIR)\slprj\ert\_sharedutils\xaxpy_Wxch84Fl.c $(START_DIR)\slprj\ert\_sharedutils\xaxpy_guu0hJif.c $(START_DIR)\slprj\ert\_sharedutils\xdotc_mznw4aLl.c $(START_DIR)\slprj\ert\_sharedutils\xgemv_NQlWbt2i.c $(START_DIR)\slprj\ert\_sharedutils\xgemv_fRiR1I1O.c $(START_DIR)\slprj\ert\_sharedutils\xgerc_R09LiDgJ.c $(START_DIR)\slprj\ert\_sharedutils\xgerc_tNNiazQU.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_7bm34mDQ.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_Mnmxg9YT.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_Rlk0oxWw.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_nLdASVZH.c $(START_DIR)\slprj\ert\_sharedutils\xnrm2_xDOlDEtw.c $(START_DIR)\slprj\ert\_sharedutils\xrot_i7f01JoJ.c $(START_DIR)\slprj\ert\_sharedutils\xrotg_XzIjz1eG.c $(START_DIR)\slprj\ert\_sharedutils\xscal_59GtRAwv.c $(START_DIR)\slprj\ert\_sharedutils\xscal_PLmmUlD2.c $(START_DIR)\slprj\ert\_sharedutils\xscal_eaAxXsvQ.c $(START_DIR)\slprj\ert\_sharedutils\xswap_JoAqPjUv.c $(START_DIR)\slprj\ert\_sharedutils\pm_printf.c $(START_DIR)\slprj\ert\_sharedutils\rt_backsubrr_dbl.c $(START_DIR)\slprj\ert\_sharedutils\rt_forwardsubrr_dbl.c $(START_DIR)\slprj\ert\_sharedutils\rt_lu_real.c $(START_DIR)\slprj\ert\_sharedutils\rt_matrixlib_dbl.c
 
 ALL_SRCS = $(SRCS)
 
@@ -191,7 +191,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = look1_binlxpw.obj merge_SqkScL3b.obj rtGetInf.obj rtGetNaN.obj rt_nonfinite.obj sort_iw8mDS81.obj UTMeanCovSqrt_C2vgLQ4W.obj UTMeanCovSqrt_C6QfB9Td.obj cholUpdateFactor_HBMX5a5h.obj qr_5a2P8Gh6.obj qr_DvOBrgQi.obj rotate_LZ7ctbe0.obj rt_hypotd_snf.obj svd_u3DvUgOe.obj trisolve_BC1XmAGq.obj xaxpy_OQ28XA21.obj xaxpy_Wxch84Fl.obj xaxpy_guu0hJif.obj xdotc_mznw4aLl.obj xgemv_NQlWbt2i.obj xgemv_fRiR1I1O.obj xgerc_R09LiDgJ.obj xgerc_tNNiazQU.obj xnrm2_7bm34mDQ.obj xnrm2_Mnmxg9YT.obj xnrm2_Rlk0oxWw.obj xnrm2_nLdASVZH.obj xnrm2_xDOlDEtw.obj xrot_i7f01JoJ.obj xrotg_XzIjz1eG.obj xscal_59GtRAwv.obj xscal_PLmmUlD2.obj xscal_eaAxXsvQ.obj xswap_JoAqPjUv.obj
+OBJS = look1_binlxpw.obj UTMeanCovSqrt_C2vgLQ4W.obj UTMeanCovSqrt_C6QfB9Td.obj cholUpdateFactor_HBMX5a5h.obj qr_5a2P8Gh6.obj qr_DvOBrgQi.obj rotate_LZ7ctbe0.obj rtGetInf.obj rtGetNaN.obj rt_hypotd_snf.obj rt_nonfinite.obj svd_u3DvUgOe.obj trisolve_BC1XmAGq.obj xaxpy_OQ28XA21.obj xaxpy_Wxch84Fl.obj xaxpy_guu0hJif.obj xdotc_mznw4aLl.obj xgemv_NQlWbt2i.obj xgemv_fRiR1I1O.obj xgerc_R09LiDgJ.obj xgerc_tNNiazQU.obj xnrm2_7bm34mDQ.obj xnrm2_Mnmxg9YT.obj xnrm2_Rlk0oxWw.obj xnrm2_nLdASVZH.obj xnrm2_xDOlDEtw.obj xrot_i7f01JoJ.obj xrotg_XzIjz1eG.obj xscal_59GtRAwv.obj xscal_PLmmUlD2.obj xscal_eaAxXsvQ.obj xswap_JoAqPjUv.obj pm_printf.obj rt_backsubrr_dbl.obj rt_forwardsubrr_dbl.obj rt_lu_real.obj rt_matrixlib_dbl.obj
 
 ALL_OBJS = $(OBJS)
 
@@ -319,26 +319,6 @@ look1_binlxpw.obj : "$(START_DIR)\slprj\ert\_sharedutils\look1_binlxpw.c"
 	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\look1_binlxpw.c"
 
 
-merge_SqkScL3b.obj : "$(START_DIR)\slprj\ert\_sharedutils\merge_SqkScL3b.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\merge_SqkScL3b.c"
-
-
-rtGetInf.obj : "$(START_DIR)\slprj\ert\_sharedutils\rtGetInf.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rtGetInf.c"
-
-
-rtGetNaN.obj : "$(START_DIR)\slprj\ert\_sharedutils\rtGetNaN.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rtGetNaN.c"
-
-
-rt_nonfinite.obj : "$(START_DIR)\slprj\ert\_sharedutils\rt_nonfinite.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rt_nonfinite.c"
-
-
-sort_iw8mDS81.obj : "$(START_DIR)\slprj\ert\_sharedutils\sort_iw8mDS81.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\sort_iw8mDS81.c"
-
-
 UTMeanCovSqrt_C2vgLQ4W.obj : "$(START_DIR)\slprj\ert\_sharedutils\UTMeanCovSqrt_C2vgLQ4W.c"
 	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\UTMeanCovSqrt_C2vgLQ4W.c"
 
@@ -363,8 +343,20 @@ rotate_LZ7ctbe0.obj : "$(START_DIR)\slprj\ert\_sharedutils\rotate_LZ7ctbe0.c"
 	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rotate_LZ7ctbe0.c"
 
 
+rtGetInf.obj : "$(START_DIR)\slprj\ert\_sharedutils\rtGetInf.c"
+	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rtGetInf.c"
+
+
+rtGetNaN.obj : "$(START_DIR)\slprj\ert\_sharedutils\rtGetNaN.c"
+	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rtGetNaN.c"
+
+
 rt_hypotd_snf.obj : "$(START_DIR)\slprj\ert\_sharedutils\rt_hypotd_snf.c"
 	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rt_hypotd_snf.c"
+
+
+rt_nonfinite.obj : "$(START_DIR)\slprj\ert\_sharedutils\rt_nonfinite.c"
+	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rt_nonfinite.c"
 
 
 svd_u3DvUgOe.obj : "$(START_DIR)\slprj\ert\_sharedutils\svd_u3DvUgOe.c"
@@ -449,6 +441,26 @@ xscal_eaAxXsvQ.obj : "$(START_DIR)\slprj\ert\_sharedutils\xscal_eaAxXsvQ.c"
 
 xswap_JoAqPjUv.obj : "$(START_DIR)\slprj\ert\_sharedutils\xswap_JoAqPjUv.c"
 	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\xswap_JoAqPjUv.c"
+
+
+pm_printf.obj : "$(START_DIR)\slprj\ert\_sharedutils\pm_printf.c"
+	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\pm_printf.c"
+
+
+rt_backsubrr_dbl.obj : "$(START_DIR)\slprj\ert\_sharedutils\rt_backsubrr_dbl.c"
+	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rt_backsubrr_dbl.c"
+
+
+rt_forwardsubrr_dbl.obj : "$(START_DIR)\slprj\ert\_sharedutils\rt_forwardsubrr_dbl.c"
+	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rt_forwardsubrr_dbl.c"
+
+
+rt_lu_real.obj : "$(START_DIR)\slprj\ert\_sharedutils\rt_lu_real.c"
+	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rt_lu_real.c"
+
+
+rt_matrixlib_dbl.obj : "$(START_DIR)\slprj\ert\_sharedutils\rt_matrixlib_dbl.c"
+	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\slprj\ert\_sharedutils\rt_matrixlib_dbl.c"
 
 
 ###########################################################################

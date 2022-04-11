@@ -2,7 +2,7 @@
 ## Makefile generated for component 'Accumulator'. 
 ## 
 ## Makefile     : Accumulator.mk
-## Generated on : Sat Apr 09 14:33:06 2022
+## Generated on : Mon Apr 11 22:47:12 2022
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)\Accumulator.exe
 ## Product type : executable
 ## 

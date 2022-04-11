@@ -28,14 +28,11 @@ SOC0 = z0;            % Initial State of Charge              [%]
 
 %% Other Parameters
 Ts = 0.2;
-Ts_sim = Ts;
-Ts_micro = Ts;
-Ts_macro = 60;
 
 %% Filter parameters
 x0  = [0; AH0; AH];            % Initial State
-Px0 = 1e-7*diag(x0);        % Initial covariance
-Qx0 = 1e-7*diag(x0);        % Process noise covariance
+Px0 = 1e-6*diag(x0);        % Initial covariance
+Qx0 = 1e-5*diag(x0);        % Process noise covariance
 Rx0 = 1e-3;                 % Measurement noise covariance
 
 l_x             = length(x0);
@@ -62,11 +59,16 @@ cell_count = 126;
 cCap = C_r * 3600 * ones(cell_count, 1);
 cQur = cCap / 2;
 
-%cCap = awgn(cCap, -60);
+cCap = awgn(cCap, -60);
+
+cTmp = 20*ones(60, 1);
+
+Tmp = 40;
+
 
 R_short = 33;
 
-Cap_det = -1e-6;
+Cap_det = -1e-7;
 
 U_sought = 4.15;
 U_CC = 0.06;
