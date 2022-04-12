@@ -1,1 +1,0 @@
-var reportPages = [["Summary","Charger_survey.html"],["Subsystem Report","Charger_subsystems.html"],["Code Interface Report","Charger_interface.html"],["Traceability Report","Charger_trace.html"],["Static Code Metrics Report","Charger_metrics.html"],["Code Replacements Report","Charger_replacements.html"],["Coder Assumptions","Charger_coderassumptions.html"]];

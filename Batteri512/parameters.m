@@ -74,9 +74,14 @@ U_CC = 0.06;
 I_CV = 1;
 U_tol = 0.0000005;
 
-AIR_plus_delay = round(0.6/Ts);
-AIR_minus_delay = round(0.6/Ts);
-precharge_delay = round(0.3/Ts);
+AIR_plus_delay = round(0.4/Ts);
+AIR_minus_delay = round(0.4/Ts);
+precharge_delay = round(0.2/Ts);
+
+IMD_duty_cycle = 0.05;
+IMD_frequency = 10;
+IMD_ok = 1;
+
 
 
 

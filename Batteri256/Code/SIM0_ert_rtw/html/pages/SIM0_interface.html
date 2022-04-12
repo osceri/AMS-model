@@ -1,0 +1,1443 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for SIM0
+</title>
+
+</head>
+<body>
+<h1>
+Code Interface Report for SIM0
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SIM0_initialize'})">SIM0_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void SIM0_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SIM0.h'})">SIM0.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SIM0_step'})">SIM0_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void SIM0_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Output entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 0.2 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SIM0.h'})">SIM0.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SIM0_terminate'})">SIM0_terminate</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void SIM0_terminate(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Termination entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SIM0.h'})">SIM0.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/AMS_error
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.AMS_error
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/AMS_error_reset
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.AMS_error_reset
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/IMD_error
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.IMD_error
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/IMD_error_reset
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.IMD_error_reset
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/SC
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.SC
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/enable_AIR_minus
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.EnableAirMinus
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/enable_AIR_plus
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.EnableAirPlus
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/enable_precharge
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.EnablePrecharge
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/voltage_limit
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.VoltageLimit
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/current_limit
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.CurrentLimit
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/enable_charger
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.EnableCharge
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/charge
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.charge
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/drive
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.drive
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/balance_vector
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.BalanceOut
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[126]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/drive_current
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_U.drive_current
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/AMS_error_latched
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.AMS_error_latched
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/IMD_error_latched
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.IMD_error_latched
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/SC_probe
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.SC_probe
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/AIR_minus_closed
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.AIR_minus_closed
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/AIR_plus_closed
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.AIR_plus_closed
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/precharge_closed
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.precharge_closed
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/current
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.current
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/vehicle_voltage
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.vehicle_voltage
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/accumulator_voltage
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.accumulator_voltage
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/cell_voltages
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.cell_voltages
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[126]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/cell_socs
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.cell_socs
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[126]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/cell_capacities
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.cell_capacities
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[126]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/cell_temperatures
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.cell_temperatures
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[60]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/IMD_ok
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_Y.IMD_ok
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Parameter Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+C_r
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.C_r
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+Cap_det
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Cap_det
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+IMD_ok
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.IMD_ok
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+R_short
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.R_short
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+Rp
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Rp
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  13]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+Rs
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Rs
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  13]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+Ts
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Ts
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+cCap
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.cCap
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[126    1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+cQur
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.cQur
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[126    1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+cTmp
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.cTmp
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[60   1]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+ocv
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.ocv
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  13]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+soc
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.soc
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  13]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+tau
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.tau
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  13]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/S-R Flip-Flop2
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.SRFlipFlop2_initial_condition
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/S-R Flip-Flop1
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.SRFlipFlop1_initial_condition
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory15
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory15_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory12
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory12_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[126    1]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory20
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory20_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory11
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory11_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory9
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory9_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory19
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory19_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory21
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory21_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S32&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Gain_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Constant1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory6
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory6_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory7
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory7_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory16
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory16_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory17
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory17_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory18
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory18_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory1
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory1_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory2
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory2_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory3
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory3_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory4
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory4_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory5
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory5_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Delay3
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Delay3_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Delay2
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Delay2_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory22
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory22_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Delay1
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Delay1_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory13
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory13_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory14
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory14_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S10&gt;/Memory8
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Memory8_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S31&gt;/Logic
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Logic_table
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+[8  2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S30&gt;/Logic
+</td>
+<td width="26%" align="left" valign="top">
+SIM0_P.Logic_table_f
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+[8  2]
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>

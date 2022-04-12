@@ -1,1 +1,0 @@
-var modelInfo = {model:"Charger"};var modelHierarchy=[{model:"Charger",relativePath:"_internal.html",parent:"null"},];

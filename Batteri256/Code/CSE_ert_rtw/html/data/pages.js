@@ -1,1 +1,0 @@
-var reportPages = [["Summary","CSE_survey.html"],["Subsystem Report","CSE_subsystems.html"],["Code Interface Report","CSE_interface.html"],["Traceability Report","CSE_trace.html"],["Static Code Metrics Report","CSE_metrics.html"],["Code Replacements Report","CSE_replacements.html"],["Coder Assumptions","CSE_coderassumptions.html"]];

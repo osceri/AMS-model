@@ -1,1 +1,0 @@
-var modelInfo = {model:"Accumulator"};var modelHierarchy=[{model:"Accumulator",relativePath:"_internal.html",parent:"null"},];
