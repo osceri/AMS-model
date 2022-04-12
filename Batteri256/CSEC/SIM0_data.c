@@ -174,6 +174,8 @@ P_SIM0_T SIM0_P = {
 
   0.0,
 
+  0.0,
+
 
   { false, true, false, false, true, true, false, false, true, false, true, true,
     false, false, false, false },

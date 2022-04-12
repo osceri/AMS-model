@@ -2,7 +2,7 @@
 ## Makefile generated for component 'SIM0'. 
 ## 
 ## Makefile     : SIM0.mk
-## Generated on : Tue Apr 12 03:02:59 2022
+## Generated on : Tue Apr 12 04:34:37 2022
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)\SIM0.exe
 ## Product type : executable
 ## 
@@ -35,12 +35,6 @@ CMD_FILE                  = SIM0.rsp
 C_STANDARD_OPTS           = 
 CPP_STANDARD_OPTS         = 
 NODEBUG                   = 1
-LIBSSC_SLI_ERT_VCX64_OBJS = 
-LIBSSC_CORE_ERT_VCX64_OBJS = 
-LIBSSC_ST_ERT_VCX64_OBJS  = 
-LIBMC_ERT_VCX64_OBJS      = 
-LIBEX_ERT_VCX64_OBJS      = 
-LIBPM_ERT_VCX64_OBJS      = 
 
 ###########################################################################
 ## TOOLCHAIN SPECIFICATIONS
@@ -189,7 +183,7 @@ DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_STAN
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_zc.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_il.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_all.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_act.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_exp.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_log.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_tdxf_p.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_dxf_p.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_dxf.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_mode.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_f.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_duf.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_assert.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1.c $(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_gateway.c $(START_DIR)\SIM0_ert_rtw\SIM0.c $(START_DIR)\SIM0_ert_rtw\SIM0_data.c
+SRCS = $(START_DIR)\SIM0_ert_rtw\SIM0.c $(START_DIR)\SIM0_ert_rtw\SIM0_data.c
 
 MAIN_SRC = $(START_DIR)\SIM0_ert_rtw\ert_main.c
 
@@ -199,7 +193,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = SIM0_627956e1_1_ds.obj SIM0_627956e1_1_ds_zc.obj SIM0_627956e1_1_ds_obs_il.obj SIM0_627956e1_1_ds_obs_all.obj SIM0_627956e1_1_ds_obs_act.obj SIM0_627956e1_1_ds_obs_exp.obj SIM0_627956e1_1_ds_log.obj SIM0_627956e1_1_ds_tdxf_p.obj SIM0_627956e1_1_ds_dxf_p.obj SIM0_627956e1_1_ds_dxf.obj SIM0_627956e1_1_ds_mode.obj SIM0_627956e1_1_ds_f.obj SIM0_627956e1_1_ds_duf.obj SIM0_627956e1_1_ds_assert.obj SIM0_627956e1_1.obj SIM0_627956e1_1_gateway.obj SIM0.obj SIM0_data.obj
+OBJS = SIM0.obj SIM0_data.obj
 
 MAIN_OBJ = ert_main.obj
 
@@ -215,7 +209,7 @@ PREBUILT_OBJS =
 ## LIBRARIES
 ###########################################################################
 
-LIBS = $(MATLAB_ROOT)\toolbox\physmod\simscape\engine\sli\lib\win64\ssc_sli_ert_vcx64.lib $(MATLAB_ROOT)\toolbox\physmod\simscape\engine\core\lib\win64\ssc_core_ert_vcx64.lib $(MATLAB_ROOT)\toolbox\physmod\simscape\simtypes\core\lib\win64\ssc_st_ert_vcx64.lib $(MATLAB_ROOT)\toolbox\physmod\common\math\core\lib\win64\mc_ert_vcx64.lib $(MATLAB_ROOT)\toolbox\physmod\common\external\library\lib\win64\ex_ert_vcx64.lib $(MATLAB_ROOT)\toolbox\physmod\common\foundation\core\lib\win64\pm_ert_vcx64.lib $(START_DIR)\slprj\ert\_sharedutils\instrumented\rtwshared.lib
+LIBS = $(START_DIR)\slprj\ert\_sharedutils\instrumented\rtwshared.lib
 
 ###########################################################################
 ## SYSTEM LIBRARIES
@@ -316,86 +310,6 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
 
 
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\engine\sli\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\engine\sli\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\engine\core\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\engine\core\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\compiler\core\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\compiler\core\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\ds\core\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\ds\core\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\simtypes\core\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\simscape\simtypes\core\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\math\core\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\math\core\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\logging\core\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\logging\core\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\lang\core\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\lang\core\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\external\library\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\external\library\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\foundation\core\c\win64}.c.obj :
-	$(CC) $(CFLAGS) -Fo"$@" "$<"
-
-
-{$(MATLAB_ROOT)\toolbox\physmod\common\foundation\core\c\win64}.cpp.obj :
-	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
-
-
 {$(START_DIR)}.c.obj :
 	$(CC) $(CFLAGS) -Fo"$@" "$<"
 
@@ -436,70 +350,6 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -Fo"$@" "$<"
 
 
-SIM0_627956e1_1_ds.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds.c"
-
-
-SIM0_627956e1_1_ds_zc.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_zc.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_zc.c"
-
-
-SIM0_627956e1_1_ds_obs_il.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_il.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_il.c"
-
-
-SIM0_627956e1_1_ds_obs_all.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_all.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_all.c"
-
-
-SIM0_627956e1_1_ds_obs_act.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_act.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_act.c"
-
-
-SIM0_627956e1_1_ds_obs_exp.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_exp.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_obs_exp.c"
-
-
-SIM0_627956e1_1_ds_log.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_log.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_log.c"
-
-
-SIM0_627956e1_1_ds_tdxf_p.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_tdxf_p.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_tdxf_p.c"
-
-
-SIM0_627956e1_1_ds_dxf_p.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_dxf_p.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_dxf_p.c"
-
-
-SIM0_627956e1_1_ds_dxf.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_dxf.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_dxf.c"
-
-
-SIM0_627956e1_1_ds_mode.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_mode.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_mode.c"
-
-
-SIM0_627956e1_1_ds_f.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_f.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_f.c"
-
-
-SIM0_627956e1_1_ds_duf.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_duf.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_duf.c"
-
-
-SIM0_627956e1_1_ds_assert.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_assert.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_ds_assert.c"
-
-
-SIM0_627956e1_1.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1.c"
-
-
-SIM0_627956e1_1_gateway.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_gateway.c"
-	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0_627956e1_1_gateway.c"
-
-
 SIM0.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0.c"
 	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\SIM0.c"
 
@@ -510,40 +360,6 @@ SIM0_data.obj : "$(START_DIR)\SIM0_ert_rtw\SIM0_data.c"
 
 ert_main.obj : "$(START_DIR)\SIM0_ert_rtw\ert_main.c"
 	$(CC) $(CFLAGS) -Fo"$@" "$(START_DIR)\SIM0_ert_rtw\ert_main.c"
-
-
-#------------------------
-# BUILDABLE LIBRARIES
-#------------------------
-
-$(MATLAB_ROOT)\toolbox\physmod\simscape\engine\sli\lib\win64\ssc_sli_ert_vcx64.lib : $(LIBSSC_SLI_ERT_VCX64_OBJS)
-	@cmd /C "@echo ### Creating static library $@ ..."
-	$(AR) $(ARFLAGS) -out:$@ $(LIBSSC_SLI_ERT_VCX64_OBJS)
-
-
-$(MATLAB_ROOT)\toolbox\physmod\simscape\engine\core\lib\win64\ssc_core_ert_vcx64.lib : $(LIBSSC_CORE_ERT_VCX64_OBJS)
-	@cmd /C "@echo ### Creating static library $@ ..."
-	$(AR) $(ARFLAGS) -out:$@ $(LIBSSC_CORE_ERT_VCX64_OBJS)
-
-
-$(MATLAB_ROOT)\toolbox\physmod\simscape\simtypes\core\lib\win64\ssc_st_ert_vcx64.lib : $(LIBSSC_ST_ERT_VCX64_OBJS)
-	@cmd /C "@echo ### Creating static library $@ ..."
-	$(AR) $(ARFLAGS) -out:$@ $(LIBSSC_ST_ERT_VCX64_OBJS)
-
-
-$(MATLAB_ROOT)\toolbox\physmod\common\math\core\lib\win64\mc_ert_vcx64.lib : $(LIBMC_ERT_VCX64_OBJS)
-	@cmd /C "@echo ### Creating static library $@ ..."
-	$(AR) $(ARFLAGS) -out:$@ $(LIBMC_ERT_VCX64_OBJS)
-
-
-$(MATLAB_ROOT)\toolbox\physmod\common\external\library\lib\win64\ex_ert_vcx64.lib : $(LIBEX_ERT_VCX64_OBJS)
-	@cmd /C "@echo ### Creating static library $@ ..."
-	$(AR) $(ARFLAGS) -out:$@ $(LIBEX_ERT_VCX64_OBJS)
-
-
-$(MATLAB_ROOT)\toolbox\physmod\common\foundation\core\lib\win64\pm_ert_vcx64.lib : $(LIBPM_ERT_VCX64_OBJS)
-	@cmd /C "@echo ### Creating static library $@ ..."
-	$(AR) $(ARFLAGS) -out:$@ $(LIBPM_ERT_VCX64_OBJS)
 
 
 ###########################################################################
